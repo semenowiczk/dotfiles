@@ -250,7 +250,7 @@ alias ln='ln -iv'
 alias mkdir='mkdir -v'
 alias rmf='rm -rf'
 alias p='ps axo pid,user,pcpu,comm'
-alias uptime='uptime -p'
+# alias uptime='uptime -p' # not working
 alias free='free -h'
 alias disk='df -h | grep sd \
     | sed -e "s_/dev/sda[1-9]_\x1b[34m&\x1b[0m_" \

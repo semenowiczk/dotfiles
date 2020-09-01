@@ -32,7 +32,7 @@ plugins=(
   terraform
   # vagrant
   vault
-  # z
+  z
 )
 
 # Set name of the theme to load --- if set to "random", it will
@@ -45,7 +45,7 @@ ZSH_THEME="avit"
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
 # If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+# ZSH_THEME_RANDOM_CANDIDATES=("aussiegeek" "jbergantine" "mrtazz" "robbyrussell" "agnoster" )
 # ZSH_THEME_RANDOM_BLACKLIST=(pygmalion tjkirch_mod)
 
 # Uncomment the following line to use case-sensitive completion.
