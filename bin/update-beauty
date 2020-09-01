@@ -1,0 +1,107 @@
+#!/usr/bin/env bash
+
+magenta='\e[1;35m'
+green='\e[1;32m'
+red='\e[0;31m'
+white='\e[0;37m'
+source_dir="$HOME/.local/src"
+
+# Since some programs are installed in non-root directories,
+# don't run this script as root to avoid permission conflict.
+if [[ $EUID -eq 0 ]]; then
+    echo "Don't run this script as root"
+    exit 1
+fi
+
+# Print usage message.
+usage() {
+    local program_name
+    program_name=${0##*/}
+    cat <<EOF
+Usage: $program_name [-option]
+
+Options:
+    --help    Print this message
+    -a        Update all packages
+EOF
+}
+
+# Tools.
+row() {
+    seq -s '─' 0 "$(tput cols)" | tr -d '[:digit:]'
+}
+
+# Get latest release.
+get_latest_release() {
+    local regex_to_remove_url='sed -re ''s#(http://|https://|git@|git://)github.com(/|:)##'' -e ''s#(/|.git)$##'''
+    local username_and_repo
+    username_and_repo=$(git config --get remote.origin.url | $regex_to_remove_url)
+    curl -s "https://api.github.com/repos/$username_and_repo/releases/latest" | awk -F '"' '/tag_name/{print $4}'
+}
+
+# Use latest release.
+use_latest_release() {
+    local get_version
+    get_version=$(get_latest_release)
+    if [ -n "$get_version" ]; then
+        git clean -fd
+        git fetch origin tag "$get_version" --no-tags || return 1
+        git checkout "$get_version"
+    else
+        echo -e "${red}[!] Error: There is an internet connection issue.${white}"
+        return 1
+    fi
+}
+
+# Installer.
+update_oh-my-zsh() {
+    echo -e "$magenta\n Updating oh-my-zsh... \n$white"
+    sh "$HOME/.oh-my-zsh/tools/upgrade.sh"
+    echo -e "$magenta\n Updating zsh plugins... \n$white"
+    cd "$HOME/.zsh/plugins" || return
+    find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;
+}
+
+update_one_by_one() {
+    declare -a arr=("update_oh-my-zsh")
+
+    for update_command in "${arr[@]}"; do
+        echo
+        read -r -p "Do you want to ${update_command//_/ }? [y/n] " response
+        case $response in
+            [yY][eE][sS]|[yY])
+                $update_command
+                ;;
+            *)
+                echo "Cancelled."
+                ;;
+        esac
+    done
+}
+
+main() {
+    case "$1" in
+        -h|--help)
+            usage
+            exit 0
+            ;;
+        '')
+            update_one_by_one
+            ;;
+        -a)
+            update_oh-my-zsh
+            update_i3-gaps
+            update_i3blocks
+            update_i3lock
+            update_rofi
+            update_dunst
+            update_picom
+            ;;
+        *)
+            echo "Command not found"
+            exit 1
+            ;;
+    esac
+}
+
+main "$@"
