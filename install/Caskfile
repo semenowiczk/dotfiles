@@ -19,7 +19,7 @@ cask "slack" # Team communication and collaboration software https://slack.com/
 cask "sourcetree" # Graphical client for Git version control https://www.sourcetreeapp.com/
 cask "spotify" # Music streaming service https://www.spotify.com/
 cask "visual-studio-code" # Open-source code editor https://code.visualstudio.com/
-cask "vlc" # Multimedia player https://www.videolan.org/vlc/
+# Error: No file found at - cask "vlc" # Multimedia player https://www.videolan.org/vlc/
 cask "the-unarchiver"
 cask "iterm2"
 
