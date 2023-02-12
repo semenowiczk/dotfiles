@@ -1,6 +1,6 @@
-COMPUTER_NAME="Neo"
-LANGUAGES=(en nl)
-LOCALE="en_US@currency=EUR"
+COMPUTER_NAME="KrisMacbook"
+LANGUAGES=(en pl)
+LOCALE="en_US@currency=PLN"
 MEASUREMENT_UNITS="Centimeters"
 SCREENSHOTS_FOLDER="${HOME}/Screenshots"
 
@@ -68,6 +68,7 @@ sudo pmset -a standbydelay 86400
 # Disable Sudden Motion Sensor
 sudo pmset -a sms 0
 
+### ?
 # Disable audio feedback when volume is changed
 defaults write com.apple.sound.beep.feedback -bool false
 
@@ -78,6 +79,7 @@ sudo nvram StartupMute=%01
 # Menu bar: show battery percentage
 defaults write com.apple.menuextra.battery ShowPercent YES
 
+### ?
 # Disable opening and closing window animations
 defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
 
@@ -107,6 +109,7 @@ defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
 # Disable the crash reporter
 defaults write com.apple.CrashReporter DialogType -string "none"
 
+### ?
 # Disable Notification Center and remove the menu bar icon
 launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
 
@@ -114,6 +117,7 @@ launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.
 # Keyboard & Input                                                            #
 ###############################################################################
 
+### ?
 # Disable smart quotes and dashes as they’re annoying when typing code
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
@@ -122,6 +126,7 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 # (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
+### ?
 # Disable press-and-hold for keys in favor of key repeat
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
@@ -366,9 +371,11 @@ defaults write com.apple.SoftwareUpdate AutomaticDownload -bool true
 # Install System data files & security updates
 defaults write com.apple.SoftwareUpdate CriticalUpdateInstall -bool true
 
+### ?
 # Turn on app auto-update
 defaults write com.apple.commerce AutoUpdate -bool true
 
+### ?
 # Allow the App Store to reboot machine on macOS updates
 defaults write com.apple.commerce AutoUpdateRestartRequired -bool true
 

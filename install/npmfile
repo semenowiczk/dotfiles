@@ -1,14 +1,16 @@
-fast-cli
-fkill-cli
-get-port-cli
-gtop
-local-web-server
-nodemon
-npm
-npm-check
-prettier
-release-it
-svgo
-tldr
-underscore-cli
-yarn
+fast-cli # Test your download and upload speed using fast.com https://www.npmjs.com/package/fast-cli
+fkill-cli # Fabulously kill processes. Cross-platform. https://www.npmjs.com/package/fkill-cli
+get-port-cli # Get an available port https://www.npmjs.com/package/get-port-cli
+gtop # System monitoring dashboard for terminal. https://www.npmjs.com/package/gtop
+local-web-server # A lean, modular web server for rapid full-stack development. https://www.npmjs.com/package/local-web-server
+nodemon # Simple monitor script for use during development of a Node.js app. https://www.npmjs.com/package/nodemon
+npm # Simple monitor script for use during development of a Node.js app. https://www.npmjs.com/search?q=npm
+npm-check # Check for outdated, incorrect, and unused dependencies. https://www.npmjs.com/package/npm-check
+prettier # Prettier is an opinionated code formatter https://www.npmjs.com/package/prettier
+release-it # Generic CLI tool to automate versioning and package publishing related tasks. https://www.npmjs.com/package/release-it
+svgo # Nodejs-based tool for optimizing SVG vector graphics files https://www.npmjs.com/package/svgo
+tldr # Simplified and community-driven man pages https://www.npmjs.com/package/tldr
+underscore-cli # Command-line interface to underscore.js - useful for shell scripting and JSON processing https://www.npmjs.com/package/underscore-cli
+yarn # Fast, reliable, and secure dependency management. https://www.npmjs.com/package/yarn
+###-----Kris
+awsp # Easily switch between AWS Profiles https://www.npmjs.com/package/awsp

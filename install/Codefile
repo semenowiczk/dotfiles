@@ -1,10 +1,10 @@
-adpyke.codesnap
-dbaeumer.vscode-eslint
-eamodio.gitlens
-esbenp.prettier-vscode
-hediet.vscode-drawio
-naumovs.color-highlight
-redhat.vscode-yaml
-ritwickdey.liveserver
-sharat.vscode-brewfile
-stkb.rewrap
+adpyke.codesnap # Take beautiful screenshots of your code in VS Code! https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap
+dbaeumer.vscode-eslint # Integrates ESLint into VS Code https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+eamodio.gitlens # GitLens supercharges Git inside VS Code and unlocks the untapped knowledge within each repository. https://github.com/gitkraken/vscode-gitlens
+esbenp.prettier-vscode # Prettier is an opinionated code formatter. It enforces a consistent style by parsing your code and re-printing it with its own rules that take the maximum line length into account, wrapping code when necessary. https://github.com/prettier/prettier-vscode
+hediet.vscode-drawio # This unofficial extension integrates Draw.io (also known as diagrams.net) into VS Code. https://github.com/hediet/vscode-drawio
+naumovs.color-highlight # This extension styles css/web colors found in your document. https://github.com/enyancc/vscode-ext-color-highlight
+redhat.vscode-yaml # Provides comprehensive YAML Language support to Visual Studio Code, via the yaml-language-server, with built-in Kubernetes syntax support. https://github.com/redhat-developer/vscode-yaml
+ritwickdey.liveserver # Launch a local development server with live reload feature for static & dynamic pages. https://github.com/ritwickdey/vscode-live-server
+sharat.vscode-brewfile # This Extension adds Ruby syntax highlighting for Brewfiles https://github.com/sharat/vscode-brewfile
+stkb.rewrap # The main Rewrap command is: Rewrap Comment / Text, by default bound to Alt+Q https://github.com/stkb/Rewrap

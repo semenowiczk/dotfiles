@@ -1,9 +1,9 @@
 [user]
-	name = Lars Kappert
-	email = lars@webpro.nl
+	name = Krzysztof Semenowicz
+	email = krysztof@semenowicz.net
 
 [github]
-	user = webpro
+	user = semenowiczk
 
 [core]
 	excludesfile = ~/.config/git/ignore

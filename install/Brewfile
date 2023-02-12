@@ -3,47 +3,64 @@ tap "homebrew/core"
 tap "lotyp/homebrew-formulae"
 
 # core/dotfiles
-brew "bats-core"
-brew "coreutils"
-brew "lotyp/formulae/dockutil"
-brew "mackup"
-brew "nano"
-brew "stow"
-brew "thefuck"
-brew "topgrade"
+brew "bats-core" # Bats-core: Bash Automated Testing System https://github.com/bats-core/bats-core
+brew "coreutils" # Coreutils - GNU core utilities https://www.gnu.org/software/coreutils/
+brew "lotyp/formulae/dockutil" # dockutil is a command line utility for managing macOS dock items. https://github.com/kcrawford/dockutil
+brew "mackup" # Keep your application settings in sync. https://github.com/lra/mackup
+brew "nano" # Free (GNU) replacement for the Pico text editor https://www.nano-editor.org/
+brew "stow" # Organize software neatly under a single directory tree (e.g. /usr/local) https://www.gnu.org/software/stow/
+brew "thefuck" # Programmatically correct mistyped console commands https://github.com/nvbn/thefuck
+brew "topgrade" # Upgrade all the things https://github.com/topgrade-rs/topgrade
 
 # fs/network
-brew "bat"
-brew "croc"
-brew "httpie"
-brew "ssh-copy-id"
-brew "tree"
-brew "unar"
-brew "wget"
-brew "zoxide"
+brew "bat" # Clone of cat(1) with syntax highlighting and Git integration https://github.com/sharkdp/bat
+brew "croc" # Securely send things from one computer to another https://github.com/schollz/croc
+brew "httpie" # User-friendly cURL replacement (command-line HTTP client) https://httpie.io/
+brew "ssh-copy-id" # Add a public key to a remote machine's authorized_keys file https://www.openssh.com/
+brew "tree" # Display directories as trees (with optional color/HTML output) http://mama.indstate.edu/users/ice/tree/
+brew "unar" # Command-line unarchiving tools supporting multiple formats https://theunarchiver.com/command-line
+brew "wget" # Internet file retriever https://www.gnu.org/software/wget/
+brew "zoxide" # Shell extension to navigate your filesystem faster https://github.com/ajeetdsouza/zoxide
+brew "syncthing"
+brew "mc"
 
 # search/grep/diff
-brew "diff-so-fancy"
-brew "difftastic"
-brew "fd"
-brew "fzf"
-brew "gnu-sed"
-brew "grep"
-brew "jq"
-brew "psgrep"
-brew "the_silver_searcher"
+brew "diff-so-fancy" # Good-lookin' diffs with diff-highlight and more https://github.com/so-fancy/diff-so-fancy
+brew "difftastic" # Diff that understands syntax https://github.com/Wilfred/difftastic
+brew "fd" # Simple, fast and user-friendly alternative to find https://github.com/sharkdp/fd
+brew "fzf" # Command-line fuzzy finder written in Go https://github.com/junegunn/fzf
+brew "gnu-sed" # GNU implementation of the famous stream editor https://www.gnu.org/software/sed/
+brew "grep" # GNU grep, egrep and fgrep https://www.gnu.org/software/grep/
+brew "jq" # Lightweight and flexible command-line JSON processor https://stedolan.github.io/jq/
+brew "psgrep" # Shortcut for the 'ps aux | grep' idiom https://github.com/jvz/psgrep
+brew "the_silver_searcher" # Also known as: ag, Code-search similar to ack https://github.com/ggreer/the_silver_searcher
 
 # languages/tools
-brew "fnm"
-brew "gh"
+brew "fnm" # Fast and simple Node.js version manager https://github.com/Schniz/fnm
+brew "gh" # GitHub command-line tool https://github.com/cli/cli
 brew "python"
-brew "rust"
-brew "shellcheck"
+brew "rust" # Safe, concurrent, practical language https://www.rust-lang.org/
+brew "shellcheck" # Static analysis and lint tool, for (ba)sh scripts https://www.shellcheck.net/
+brew "awscli"
+brew "tfenv"
+brew "terragrunt"
+brew "terraform-docs"
+brew "tflint"
+brew "terrascan"
+brew "kubectl"
+brew "kubectx"
+brew "k9s"
+brew "helm"
+brew "pass"
+brew "direnv"
+brew "vault"
 
 # media
-brew "ffmpeg"
-brew "imagemagick"
-brew "webp"
+brew "ffmpeg" # Play, record, convert, and stream audio and video https://ffmpeg.org/
+brew "imagemagick" # Tools and libraries to manipulate images in many formats https://imagemagick.org/index.php
+brew "webp" # Image format providing lossless and lossy compression for web images https://developers.google.com/speed/webp/
+brew "youtube-dl"
 
 # misc
-brew "grip"
+brew "grip" # GitHub Markdown previewer https://github.com/joeyespo/grip
+brew "zsh"

@@ -1,0 +1,1 @@
+/Users/kris/.mackup/Mackup/.zshrc
