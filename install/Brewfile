@@ -64,3 +64,6 @@ brew "youtube-dl"
 # misc
 brew "grip" # GitHub Markdown previewer https://github.com/joeyespo/grip
 brew "zsh"
+brew "starship"
+brew "openconnect"
+brew "oath-toolkit"
