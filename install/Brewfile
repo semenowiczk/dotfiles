@@ -1,10 +1,11 @@
 tap "homebrew/bundle"
-tap "homebrew/core"
+#tap "homebrew/core"
 tap "lotyp/homebrew-formulae"
 
 # core/dotfiles
 brew "bats-core" # Bats-core: Bash Automated Testing System https://github.com/bats-core/bats-core
 brew "coreutils" # Coreutils - GNU core utilities https://www.gnu.org/software/coreutils/
+brew "duti"
 brew "lotyp/formulae/dockutil" # dockutil is a command line utility for managing macOS dock items. https://github.com/kcrawford/dockutil
 brew "mackup" # Keep your application settings in sync. https://github.com/lra/mackup
 brew "nano" # Free (GNU) replacement for the Pico text editor https://www.nano-editor.org/
@@ -38,7 +39,9 @@ brew "the_silver_searcher" # Also known as: ag, Code-search similar to ack https
 # languages/tools
 brew "fnm" # Fast and simple Node.js version manager https://github.com/Schniz/fnm
 brew "gh" # GitHub command-line tool https://github.com/cli/cli
+brew "n"
 brew "python"
+brew "ruby"
 brew "rust" # Safe, concurrent, practical language https://www.rust-lang.org/
 brew "shellcheck" # Static analysis and lint tool, for (ba)sh scripts https://www.shellcheck.net/
 brew "awscli"
@@ -59,6 +62,7 @@ brew "vault"
 brew "ffmpeg" # Play, record, convert, and stream audio and video https://ffmpeg.org/
 brew "imagemagick" # Tools and libraries to manipulate images in many formats https://imagemagick.org/index.php
 brew "webp" # Image format providing lossless and lossy compression for web images https://developers.google.com/speed/webp/
+brew "uni"
 brew "youtube-dl"
 
 # misc

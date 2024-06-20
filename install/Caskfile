@@ -1,7 +1,7 @@
-tap "homebrew/cask"
-tap "homebrew/cask-drivers"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
+# tap "homebrew/cask"
+# tap "homebrew/cask-drivers"  # was deprecated. This tap is now empty and all its contents were either deleted or migrated.
+# tap "homebrew/cask-fonts"    # was deprecated. This tap is now empty and all its contents were either deleted or migrated.
+# tap "homebrew/cask-versions" # was deprecated. This tap is now empty and all its contents were either deleted or migrated.
 
 cask "docker" # App to build and share containerized applications and microservices https://www.docker.com/products/docker-desktop
 cask "dropbox" # Client for the Dropbox cloud storage service https://www.dropbox.com/
