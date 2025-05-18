@@ -283,4 +283,8 @@ alias vpntm_down='sudo killall -SIGINT openconnect'
 # AWS
 alias awsp="source _awsp"
 
-
+#VisualStudioCode
+alias vs=vs_run
+alias vsa='vs -a'
+alias vst='vs .'
+alias vsta='vst -a'

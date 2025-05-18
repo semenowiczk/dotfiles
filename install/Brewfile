@@ -1,5 +1,5 @@
 tap "homebrew/bundle"
-#tap "homebrew/core"
+# tap "homebrew/core" ### Error: Tapping homebrew/core is no longer typically necessary.
 tap "lotyp/homebrew-formulae"
 
 # core/dotfiles
@@ -42,6 +42,7 @@ brew "gh" # GitHub command-line tool https://github.com/cli/cli
 brew "n"
 brew "python"
 brew "ruby"
+brew "pipx"
 brew "rust" # Safe, concurrent, practical language https://www.rust-lang.org/
 brew "shellcheck" # Static analysis and lint tool, for (ba)sh scripts https://www.shellcheck.net/
 brew "awscli"
@@ -52,11 +53,15 @@ brew "tflint"
 brew "terrascan"
 brew "kubectl"
 brew "kubectx"
+brew "eksctl"
 brew "k9s"
 brew "helm"
 brew "pass"
 brew "direnv"
 brew "vault"
+brew "kubent" # Easily check your clusters for use of deprecated APIs
+brew "argo" # Get stuff done with container-native workflows for Kubernetes
+brew "saml2aws" # Login and retrieve AWS temporary credentials using a SAML IDP
 
 # media
 brew "ffmpeg" # Play, record, convert, and stream audio and video https://ffmpeg.org/
@@ -71,3 +76,4 @@ brew "zsh"
 brew "starship"
 brew "openconnect"
 brew "oath-toolkit"
+brew "entr"
