@@ -1,4 +1,4 @@
-tap "homebrew/bundle"
+# tap "homebrew/bundle" ### Error: homebrew/bundle was deprecated. This tap is now empty and all its contents were either deleted or migrated. 
 # tap "homebrew/core" ### Error: Tapping homebrew/core is no longer typically necessary.
 tap "lotyp/homebrew-formulae"
 
@@ -8,7 +8,7 @@ brew "coreutils" # Coreutils - GNU core utilities https://www.gnu.org/software/c
 brew "duti"
 brew "lotyp/formulae/dockutil" # dockutil is a command line utility for managing macOS dock items. https://github.com/kcrawford/dockutil
 brew "mackup" # Keep your application settings in sync. https://github.com/lra/mackup
-brew "nano" # Free (GNU) replacement for the Pico text editor https://www.nano-editor.org/
+brew "nano" # Free (GNU) replacement  for the Pico text editor https://www.nano-editor.org/
 brew "stow" # Organize software neatly under a single directory tree (e.g. /usr/local) https://www.gnu.org/software/stow/
 brew "thefuck" # Programmatically correct mistyped console commands https://github.com/nvbn/thefuck
 brew "topgrade" # Upgrade all the things https://github.com/topgrade-rs/topgrade
@@ -58,7 +58,7 @@ brew "k9s"
 brew "helm"
 brew "pass"
 brew "direnv"
-brew "vault"
+# brew "vault" ### Error: vault has been disabled because it will change its license to BUSL on the next release! It was disabled on 2024-09-27.
 brew "kubent" # Easily check your clusters for use of deprecated APIs
 brew "argo" # Get stuff done with container-native workflows for Kubernetes
 brew "saml2aws" # Login and retrieve AWS temporary credentials using a SAML IDP
@@ -68,7 +68,7 @@ brew "ffmpeg" # Play, record, convert, and stream audio and video https://ffmpeg
 brew "imagemagick" # Tools and libraries to manipulate images in many formats https://imagemagick.org/index.php
 brew "webp" # Image format providing lossless and lossy compression for web images https://developers.google.com/speed/webp/
 brew "uni"
-brew "youtube-dl"
+# brew "youtube-dl" ### Error: youtube-dl has been disabled because it is not maintained upstream! It was disabled on 2024-11-23.
 
 # misc
 brew "grip" # GitHub Markdown previewer https://github.com/joeyespo/grip

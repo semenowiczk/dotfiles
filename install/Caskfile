@@ -14,9 +14,9 @@ cask "dropbox" # Client for the Dropbox cloud storage service https://www.dropbo
 cask "font-fira-code" # Fira Code - Google Fonts https://fonts.google.com/specimen/Fira+Code
 cask "font-hack" # font designed specifically for source code and programming, https://sourcefoundry.org/hack/
 cask "google-chrome" # Web browser https://www.google.com/chrome/
-cask "google-chrome-canary" # Web browser https://www.google.com/chrome/canary/
+cask "google-chrome@canary" # Web browser https://www.google.com/chrome/canary/
 cask "hammerspoon" # Desktop automation application https://www.hammerspoon.org/
-cask "kaleidoscope2" # Spot and merge differences in text and image files or folders https://kaleidoscope.app/
+cask "kaleidoscope" # Spot and merge differences in text and image files or folders https://kaleidoscope.app/
 cask "maccy" # Clipboard manager https://maccy.app/ ----> Alfred
 
 # cask "postman" # Collaboration platform for API development https://www.postman.com/
@@ -26,14 +26,14 @@ cask "maccy" # Clipboard manager https://maccy.app/ ----> Alfred
 cask "slack" # Team communication and collaboration software https://slack.com/
 cask "sourcetree" # Graphical client for Git version control https://www.sourcetreeapp.com/
 cask "spotify" # Music streaming service https://www.spotify.com/
-cask "visual-studio-code" # Open-source code editor https://code.visualstudio.com/
+cask "visual-studio-code" # Open-source code editor https://code.visualstudio.com/ 
 
 # Error: No file found at - cask "vlc" # Multimedia player https://www.videolan.org/vlc/
 
 cask "the-unarchiver"
 cask "iterm2"
-casc "alt-tab"
-casc "karabiner-elements"
+cask "alt-tab"
+cask "karabiner-elements"
 
 # Quick Look Plugins (https://github.com/sindresorhus/quick-look-plugins)
 
@@ -42,16 +42,16 @@ cask "qlstephen" # QuickLook plugin for plaintext files without an extension htt
 cask "qlmarkdown" # QuickLook generator for Markdown files https://github.com/sbarex/QLMarkdown
 cask "quicklook-json" # QuickLook plugin for JSON files http://www.sagtau.com/quicklookjson.html
 
-<!-- cask "qlimagesize" # Display image info and preview unsupported formats in QuickLook https://github.com/Nyx0uf/qlImageSize, This project is not maintained anymore, it has been killed by macOS 10.15, see issues for details. -->
+# cask "qlimagesize" # Display image info and preview unsupported formats in QuickLook https://github.com/Nyx0uf/qlImageSize, This project is not maintained anymore, it has been killed by macOS 10.15, see issues for details.
 
 cask "suspicious-package" # Application for inspecting installer packages https://www.mothersruin.com/software/SuspiciousPackage/
 cask "apparency" # Inspect application bundles https://www.mothersruin.com/software/Apparency/
 cask "quicklookase" # QuickLook generator for Adobe Swatch Exchange files https://github.com/rsodre/QuickLookASE
 cask "qlvideo" # Thumbnails, static previews, cover art and metadata for video files https://github.com/Marginal/QLVideo
 
-cask alfred
-cask discord  
-cask fantastical  
-cask obsidian  
-cask spacelauncher  
-cask home-assistant
+cask "alfred"
+cask "discord"
+cask "fantastical"
+cask "obsidian"
+cask "spacelauncher"
+cask "home-assistant"
